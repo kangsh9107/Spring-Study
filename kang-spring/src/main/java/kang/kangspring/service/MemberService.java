@@ -3,10 +3,12 @@ package kang.kangspring.service;
 import kang.kangspring.domain.Member;
 import kang.kangspring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
